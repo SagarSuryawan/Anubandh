@@ -1,0 +1,186 @@
+   /* Navbar container */
+   .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #F8C3D9;
+    padding: 10px;
+    color: #fff;
+    position: sticky;
+    top: 100;
+    position: fixed; /* Fix the navbar to the top */
+    width: 100%; /* Take the full width of the viewport */
+    top: 0; /* Stick the navbar at the top of the viewport */
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    /* border: 1px solid black;*/
+
+}
+
+/* Logo */
+.navbar img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 200px;
+}
+
+/* Menu items */
+.menu {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    /* border: 1px solid black; */
+    height: 35px;
+   
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #AB2023;
+}
+/* main part 1*/
+.flippable-div {
+    width: 100%;
+    height: 500px;
+    perspective: 1000px;
+    cursor: pointer;
+    /* margin: 20px; */
+    /* border: 1px solid red; */
+}
+/* main */
+.flippable-div .front,
+.flippable-div .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 1.6s;
+}
+
+.flippable-div .front {
+    background: url('https://navyugbanquet.com/images/banner-img/Wedding-Hall-Near-Bund-Garden-Road-Pune-Nayug-Banquet-Web.jpg') center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(236, 226, 226);
+    transform: rotateY(0deg); /* Added */
+    width: 100%;
+    height: 100%;
+}
+
+.flippable-div .back {
+    background: url('https://navyugbanquet.com/images/banner-img/navyug-banquet-hall-pune-1.jpg') center center / cover;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.flippable-div.flipped .front {
+    transform: rotateY(-180deg); /* Added */
+}
+
+.flippable-div.flipped .back {
+    transform: rotateY(0deg); /* Added */
+}
+
+/* main part 2 */
+.event{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.event>h1{
+    color: #AB2023;
+}
+
+.eventFunction{
+    /* background-image: url('https://images.pexels.com/photos/11285444/pexels-photo-11285444.png?auto=compress&cs=tinysrgb&w=600'); */
+    margin-top: 4%;
+    /* border: 1px solid red;. */
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    grid-template-rows: auto auto; /* 2 rows with height determined by content */
+    gap: 10px; /* Gap between grid items */
+}
+
+.eventFunction>div img{
+width: 70%;
+border-radius: 5%;
+transition: width 0.3s;
+}
+
+.eventFunction>div img:hover{
+    width: 80%;
+}
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+     background-color: #F8C3D9;;
+    padding: 10px;
+    color: black;
+    position: sticky;
+}
+#footerLogo>img{
+    cursor: pointer;
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* border: 1px solid blue; */
+    
+}
+.addressdiv>p{
+    font-weight: 800;
+}
+
+.addressdiv{
+    line-height: 30px;
+    cursor: pointer;
+
+}
+.addressdiv >a:last-child{
+    text-decoration: none;
+    color: black;
+}
+
+.quickLink p{
+    /* border: 1px solid yellow; */
+    text-align: center;
+}
+.fa-solid, .fa-user{
+    margin-right: 5px;
+}
+#mail i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+#instagram i{
+    font-size: 24px;
+    margin-right: 15px;
+}
+#map i{
+    font-size: 24px;
+}
+    
