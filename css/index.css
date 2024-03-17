@@ -223,6 +223,12 @@ footer{
     /* .navbar {
         padding: 5px;
     } */
+    .navbar{
+        width: 100%;
+    }
+    .menu{
+        gap: 20px;
+    }
     .navbar img {
         max-width: 50px;
         height: 50px;
@@ -242,7 +248,7 @@ footer{
         grid-template-rows: auto auto; /* 2 rows with height determined by content */
         gap: 10px; /* Gap between grid items */
     }
-    eventFunction>div img:hover{
+    .eventFunction>div img:hover{
         width: 80%;
     }
 }
@@ -253,6 +259,9 @@ footer{
 /* applied only when the screen width is between 601 pixels and 1024 pixels.  */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
 
+    .navbar{
+        width: 100%;
+    }
     .navbar img {
         max-width: 50px;
         height: 50px;
