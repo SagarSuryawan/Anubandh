@@ -4,98 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
+        
         body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-.sidebar {
+.floating-bar {
+    width: fit-content;
+    height: fit-content;
     position: fixed;
-    top: 200;
-    left: 0;
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
+    top: 50%; /* Adjust to position vertically */
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #e41d1d;
+    padding: 10px;
     box-sizing: border-box;
+    /* width: 200px; Adjust width as needed */
+    border-left: 2px solid #333; /* Optional: Add a border for visual distinction */
 }
 
-.contact-info a {
-    margin: 0 0 10px 0;
-}
 
-.navbar {
-    background-color: #333;
-    padding: 10px 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
 
-.navbar nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+/* Optional: Add some styles to make the floating bar more visible */
+.floating-bar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the bar appears above other content */
 }
-
-.navbar nav ul li {
-    display: inline;
-}
-
-.navbar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.content {
-    margin-top: 60px; /* Adjust according to your navbar height */
-    padding: 20px;
-    height: 2000px; /* Adjust height for demonstration */
-    background-color: #f9f9f9;
-}
-
     </style>
 </head>
 <body>
-     <div class="sidebar">
+    <div class="floating-bar" id="floating-bar">
         <div class="contact-info">
-            <a id="mail" href="mailto:sagarsurya45@gmail.com">mail</i> </a><br>
-            <a href="tel:9226133600">+91 9226133600</a> 
+            <a href="tel:9226133600"><i class="fa-solid fa-phone"></i></a> <br> <br>
+            <a id="mail" href="mailto:sagarsurya45@gmail.com"><i class="fa-solid fa-envelope"> </i> </a>
         </div>
-    </div>
-
-    <header class="navbar" id="navbar">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="content">
-        <!-- Your website content goes here -->
     </div>
 </body>
 </body>
 </html>
 <script>
-    window.onscroll = function() {stickyNavbar()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function stickyNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+    
 
 </script>
