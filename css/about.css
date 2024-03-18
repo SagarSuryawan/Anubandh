@@ -122,11 +122,10 @@ footer{
     cursor: pointer;
 
 }
-.addressdiv >a:last-child{
+.addressdiv>p>a{
     text-decoration: none;
     color: black;
 }
-
 .quickLink p{
     /* border: 1px solid yellow; */
     text-align: center;

@@ -149,7 +149,7 @@ footer{
 .addressdiv>p{
     font-weight: 800;
 }
-.addressdiv >a:last-child{
+.addressdiv>p>a{
     text-decoration: none;
     color: black;
 }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 200;
+    left: 0;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-info a {
+    margin: 0 0 10px 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.content {
+    margin-top: 60px; /* Adjust according to your navbar height */
+    padding: 20px;
+    height: 2000px; /* Adjust height for demonstration */
+    background-color: #f9f9f9;
+}
+
+    </style>
+</head>
+<body>
+     <div class="sidebar">
+        <div class="contact-info">
+            <a id="mail" href="mailto:sagarsurya45@gmail.com">mail</i> </a><br>
+            <a href="tel:9226133600">+91 9226133600</a> 
+        </div>
+    </div>
+
+    <header class="navbar" id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Your website content goes here -->
+    </div>
+</body>
+</body>
+</html>
+<script>
+    window.onscroll = function() {stickyNavbar()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
