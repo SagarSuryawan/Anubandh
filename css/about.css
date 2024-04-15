@@ -176,20 +176,26 @@ footer{
 }
 /* Media queries for mobile devices */
 @media only screen and (max-width: 600px) {
-    .navbar{
-        width: 100%;
-    }
+    /* .navbar {
+        padding: 5px;
+    } */
     .menu{
-        gap: 20px;
+        height: 30px;
     }
-    .navbar img {
+    .logo img {
         max-width: 50px;
         height: 50px;
         border-radius: 50%;
         margin-left: 0px;
     }
-    .menu {
-        height: 30px;
+    .menu{
+        /* border: 1px solid red; */
+        padding: 0%;
+        gap: 0%;
+    }
+    .menu>li>a{
+        font-size: 15px;
+        /* border: 1px solid blue; */
     }
     .container{
         /* border: 1px solid black; */

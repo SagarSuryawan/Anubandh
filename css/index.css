@@ -255,11 +255,8 @@ footer{
     /* .navbar {
         padding: 5px;
     } */
-    .navbar{
-        width: 100%;
-    }
     .menu{
-        gap: 20px;
+        height: 30px;
     }
     .logo img {
         max-width: 50px;
@@ -267,8 +264,14 @@ footer{
         border-radius: 50%;
         margin-left: 0px;
     }
-    menu {
-        height: 30px;
+    .menu{
+        /* border: 1px solid red; */
+        padding: 0%;
+        gap: 0%;
+    }
+    .menu>li>a{
+        font-size: 15px;
+        /* border: 1px solid blue; */
     }
     .eventFunction{
         /* background-image: url('https://images.pexels.com/photos/11285444/pexels-photo-11285444.png?auto=compress&cs=tinysrgb&w=600'); */
